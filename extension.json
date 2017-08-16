@@ -1,0 +1,19 @@
+{
+	"name": "CCAgreement",
+	"version": "1.0",
+	"author": "Josef Martiňák",
+	"descriptionmsg": "cca-desc",
+	"type": "specialpage",
+	"MessagesDirs": {
+		"CCAgreement": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"CCAgreementHooks": "CCAgreementHooks.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "CCAgreementHooks::AddLicencing"
+	},
+	"manifest_version": 1
+}
