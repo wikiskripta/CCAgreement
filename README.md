@@ -5,6 +5,7 @@ Mediawiki extension.
 ## Description
 
 * Extension adds agreement with wiki policy to the registration page.
+* Version 1.0
 
 
 ## Instalation
