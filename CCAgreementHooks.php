@@ -17,7 +17,7 @@ class CCAgreementHooks {
 	 * @param string &$out: instance of Output object
 	 * @return Boolean: true
 	 */
-	function AddLicencing(&$out,&$skin) { 
+	public static function AddLicencing(&$out,&$skin) { 
 		global $wgSitename;
 		$pgtitle = $skin->getTitle()->getBaseText();
 		$tmp = SpecialPageFactory::resolveAlias( $pgtitle );
