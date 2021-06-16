@@ -23,9 +23,13 @@ Extension adds agreement with wiki policy to the registration page.
 
 This extension is available in English and Czech language. For other languages, just edit files in /i18n/ folder.
 
+## Release Notes
 
+### 1.1.1
+
+* Static SpecialPageFactory deprecated for MW 1.36.
 
 ## Authors and license
 
 * [Josef Martiňák](https://www.wikiskripta.eu/w/User:Josmart)
-* MIT License, Copyright (c) 2018 First Faculty of Medicine, Charles University
+* MIT License, Copyright (c) 2021 First Faculty of Medicine, Charles University
