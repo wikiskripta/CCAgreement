@@ -4,12 +4,13 @@ Mediawiki extension.
 
 ## Description
 
-Extension adds agreement with wiki policy to the registration page.
+* Extension adds agreement with wiki policy to the registration page.
+* Version 1.1.2
 
 
 ## Instalation
 
-* Make sure you have MediaWiki 1.29+ installed.
+* Make sure you have MediaWiki 1.45+ installed.
 * Download and place the extension to your /extensions/ folder.
 * Add the following code to your LocalSettings.php: `wfLoadExtension( 'CCAgreement' )`;
 
@@ -29,7 +30,11 @@ This extension is available in English and Czech language. For other languages, 
 
 * Static SpecialPageFactory deprecated for MW 1.36.
 
+### 1.1.2
+
+* Fix for 1.45.
+
 ## Authors and license
 
 * [Josef Martiňák](https://www.wikiskripta.eu/w/User:Josmart)
-* MIT License, Copyright (c) 2023 First Faculty of Medicine, Charles University
+* MIT License, Copyright (c) 2026 First Faculty of Medicine, Charles University

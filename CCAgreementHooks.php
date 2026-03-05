@@ -24,12 +24,16 @@ class CCAgreementHooks {
 				"$1value=\"".$out->msg('cca-submit-button')->text()."\" $2".$out->msg('cca-submit-button')->text(),$out->mBodytext);
 			// Append the text message
 			$tm = "<div style='font-size:90%;margin:30px 0px 20px 0px;'>" . $out->msg('cca-agreement-' . $wgSitename)->text()."</div>\n";
-			$out->mBodytext = preg_replace("/(<div class=\"mw-htmlform-field-HTMLSubmitField mw-ui-vform-field\">)/","$tm$1",$out->mBodytext);
+			$out->mBodytext = preg_replace("/(<div class=\"mw-htmlform-field-HTMLSubmitField cdx-field\">)/","$tm$1",$out->mBodytext);
+			                                               
 		}
+		/*
 		elseif($title->getBaseTitle() == SpecialPage::getTitleFor('RequestAccount')->getBaseTitle()) {
 			$tm = preg_replace("/<br\/>/", " ", $out->msg('cca-agreement-' . $wgSitename)->text());
-			$out->mBodytext = preg_replace('/<label for="wpToS">(.*?)<\/label>/', '<label for="wpToS">' . $tm . '</label>', $out->mBodytext);
+			$out->mBodytext = preg_replace('/<label for="wpToS">[^<]*<\/label>/', '<label for="wpToS">' . $tm . '</label>', $out->mBodytext);
+			//$out->mBodytext .= $tm;
 		}
+		*/
 		return true;
 	}
 }
